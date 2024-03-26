@@ -9,12 +9,12 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
-  @Get("Test")
+  @Get("Users")
   getTest(){
-    return"GetTest!"
+    return "User requests!"
   }
-  @Get("NoTest")
+  @Get("Guest")
   notest(){
-    return"NoTest!"
+    return"Guest requests!"
   }
 }
